@@ -1,17 +1,137 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="Caramelows Pixel">
+    <meta name="description" content="Caramelows Pixel CNFT">
+    <meta name="author" content="Caramelows Pixel">
+    <link rel="icon" href="">
+	<link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
 
-    <title>API NFT Maker</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5MSJ99E8L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L5MSJ99E8L');
+</script>
+
+
+    <title>Caramelos Pixel</title>
 </head>
 <body>
-<p>
-    Upload NFTs <a href="http://localhost:5000/upload">Gerar</a>
-</p>
 
-<p>
-    <a href="https://capot.github.io/caramelows/img/">Imagens</a>
-</p>
+<div id="nescss">
+      <header :class="{ sticky: scrollPos > 50 }">
+        <div class="container">
+          <div class="nav-brand">
+              <h1><img src="img\caramelow.png"/ height="80" width="80"> Caramelows Pixel </h1>
+          </div>
+          <div class="social-buttons">
+            <div class="share">
+              <a href="https://twitter.com/RatsOnChain" target="_blank"><i class="nes-icon twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </header>
+</div>
+
+    <section class="descricao">
+        <div id="descricao_texto">
+            <h2>Description</h2>
+            <p>Collection of 2000 pixel Caramelows. This collection is bio-inspired by my caramel dog Frida and her housemate Tieta.</p>
+            <p>Tieta was a street dog that we took in, and there will be some NFTs of her, Frida being the main star for symbolizing the most adorable breed in Brazil.</p>
+        </div>
+
+        <div id="descricao_imagem">
+            <img src="img\frida.png">
+        </div>
+    </section>
+
+    <section class="montagem">
+        <div id="montagem_texto">
+            <h2>Mounting</h2>
+            <p>This project was entirely made by me and entirely done in python, the best programming language :)</p>
+            <p>All the art was developed with the RGB concept to compose the images.
+                So for that I made many many many 50 x 60 matrices.</p>
+        </div>
+
+        <div id="montagem_imagem">
+            <img src="img\matriz.png">
+        </div>
+    </section>
+
+    <section class="montagem_final">
+        I used a function to smooth the pixel points, an artifice that was also used in old game emulators.
+        <p>suave = np.vstack([np.hstack([cv2.medianBlur(img, 3)]), ])</p>
+        <div id="montagem_final_img">
+            <img src="img\exemplo.jpeg">
+        </div>
+
+        <p>The randomization was done through a simple python function, which allows generating weights for each item of the elements:</p>
+        <p>self.oculos = rd.choices(la.oculos, weights=[8, 1, 1, 1, 1, 1, 1, 1, 1], k=1).</p>
+
+        <p>If the project is well accepted, I intend to make the code available in the future!!</p>
+    </section>
+<!--Este projeto foi totalmente consebido por mim e totalmente feito em python, a melhor linguagem de programação:)-->
+<!--Tota a arte foi desenvolvida com ao conceito RGB para compor as imagens.-->
+<!--Então para issso fiz muitas muitas matrizes de 50 x 60.-->
+<!--Utilizei uma função se suavização dos pontos dos pixel, artificio esse também utilizada em emuladores de jogos antigos. (foto e função)-->
+<!--A randomização foi feita atraves de um função do python simples, que permite gerar pesos para cada item dos elementos(função).-->
+<!--Se o projeto for bem aceito predendo futuramente disponibilizar o código!!-->
+
+    <section class="faq">
+<!--    <div class="nes-container with-title is-left is-dark">-->
+        <h2>FAQ</h2>
+<!--    </div>-->
+
+   <h3>Wen Mint:</h3>
+        30 octubre at 6PM UTC.
+        Will be posted on Discord
+
+    <h3>Mint price:</h3>
+        18 ADA.
+
+    <h3>What is the total supply:</h3>
+        2000
+
+    <h3>What are the royalties:</h3>
+        5%
+
+    <h3>What blockchain:</h3>
+        Cardano
+
+    <h3>Which wallet should I use:</h3>
+        Commonly used wallets are: CCvault, Adalite, Yoroi, Nami, Daedalus, Typhon Wallet, Eternl
+
+    <h3>Policy:</h3>
+
+</section>
+
+<section class="roadmap">
+
+<h2>ROADMAP</h2>
+
+    <li>Algorithm creation in python.</li>
+    <li>Random creation with python algorithm of NFTs.</li>
+    <li>Release social media (discord, twitter).</li>
+    <li>Create Metadata (policyID etc).</li>
+    <li>Build a community.</li>
+    <li>Token distribution</li>
+
+</section>
+  <footer>
+      <p>"Loving and changing things interests me more..."</p>
+          <p>
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear())
+            </script>&nbsp;Caramelows Pixel
+          </p>
+      <p>Daniel Dias #capoot</p>
+  </footer>
 </body>
 </html>
