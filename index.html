@@ -8,6 +8,7 @@
     <link rel="icon" href="">
 	<link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="index.css">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5MSJ99E8L"></script>
@@ -31,9 +32,10 @@
               <h1><img src="img\caramelow.png"/ height="80" width="80"> Caramelows Pixel </h1>
           </div>
           <div class="social-buttons">
-            <div class="share">
-              <a href="https://twitter.com/RatsOnChain" target="_blank"><i class="nes-icon twitter"></i></a>
-            </div>
+
+              <div class="social-buttons_twitter"><a href="https://twitter.com" target="_blank"><img src="img\twitter.png"></img></a></div>
+              <div class="social-buttons_twitter"><a href="https://twitter.com" target="_blank"><img src="img\discord.png"></img></a></div>
+              <div class="social-buttons_twitter"><a href="https://twitter.com" target="_blank"><img src="img\python.png"></img></a></div>
           </div>
         </div>
       </header>
@@ -42,7 +44,7 @@
     <section class="descricao">
         <div id="descricao_texto">
             <h2>Description</h2>
-            <p>Collection of 2000 pixel Caramelows. This collection is bio-inspired by my caramel dog Frida and her housemate Tieta.</p>
+            <p>Collection of 3000 pixel Caramelows. This collection is bio-inspired by my caramel dog Frida and her housemate Tieta.</p>
             <p>Tieta was a street dog that we took in, and there will be some NFTs of her, Frida being the main star for symbolizing the most adorable breed in Brazil.</p>
         </div>
 
@@ -72,7 +74,7 @@
         </div>
 
         <p>The randomization was done through a simple python function, which allows generating weights for each item of the elements:</p>
-        <p>self.oculos = rd.choices(la.oculos, weights=[8, 1, 1, 1, 1, 1, 1, 1, 1], k=1).</p>
+        <p>self.oculos = rd.choices(la.head, weights=[8, 1, 1, 1, 1, 1, 1, 1, 1], k=1).</p>
 
         <p>If the project is well accepted, I intend to make the code available in the future!!</p>
     </section>
@@ -83,40 +85,56 @@
 <!--A randomização foi feita atraves de um função do python simples, que permite gerar pesos para cada item dos elementos(função).-->
 <!--Se o projeto for bem aceito predendo futuramente disponibilizar o código!!-->
 
+    <section class="imagens">
+        <div id="imagens_img"><img src="img\img1.jpg"></div>
+        <div id="imagens_img"><img src="img\img2.jpg"></div>
+        <div id="imagens_img"><img src="img\img3.jpg"></div>
+    </section>
+
+ <section class="imagens">
+        <div id="imagens_img"><img src="img\img4.jpg"></div>
+        <div id="imagens_img"><img src="img\img5.jpeg"></div>
+        <div id="imagens_img"><img src="img\img6.jpg"></div>
+    </section>
+
     <section class="faq">
 <!--    <div class="nes-container with-title is-left is-dark">-->
         <h2>FAQ</h2>
 <!--    </div>-->
 
    <h3>Wen Mint:</h3>
-        30 octubre at 6PM UTC.
-        Will be posted on Discord
+       <label id="texto"> 30 octubre at 6PM UTC.
+        Will be posted on Discord</label>
 
     <h3>Mint price:</h3>
-        18 ADA.
+        <label id="texto">15 ADA.</label>
 
     <h3>What is the total supply:</h3>
-        2000
+            <label id="texto">3000</label>
 
     <h3>What are the royalties:</h3>
-        5%
+            <label id="texto">5%</label>
 
     <h3>What blockchain:</h3>
-        Cardano
+            <label id="texto">Cardano</label>
 
     <h3>Which wallet should I use:</h3>
-        Commonly used wallets are: CCvault, Adalite, Yoroi, Nami, Daedalus, Typhon Wallet, Eternl
+            <label id="texto">Commonly used wallets are: CCvault, Adalite, Yoroi, Nami, Daedalus, Typhon Wallet, Eternl</label>
 
     <h3>Policy:</h3>
-
+            <label id="texto"></label>
 </section>
-
+ <section class="imagens">
+        <div id="imagens_img"><img src="img\nft1.jpeg"></div>
+        <div id="imagens_img"><img src="img\nft2.jpeg"></div>
+        <div id="imagens_img"><img src="img\nft3.jpeg"></div>
+    </section>
 <section class="roadmap">
 
 <h2>ROADMAP</h2>
 
-    <li>Algorithm creation in python.</li>
-    <li>Random creation with python algorithm of NFTs.</li>
+    <li><i class="fa fa-check"></i> Algorithm creation in python.</li>
+    <li><i class="fa fa-check"></i> Random creation with python algorithm of NFTs.</li>
     <li>Release social media (discord, twitter).</li>
     <li>Create Metadata (policyID etc).</li>
     <li>Build a community.</li>
